@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-de-fundo: #D3B094;
+    --cor-da-fonte: #000000;
+    --fonte-principal: "Belleza";
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-da-fonte);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.cabecalho {
+    display: flex;
+    padding: 2.5% 0 1% 5.5%;
+}
+
+.cabecalho__links {
+    padding: 9% 0 0 9.5%;
+}
+
+.cabecalho__links-item {
+    font-size: 16px;
+    color: var(--cor-da-fonte);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.conteudo {
+    display: flex;
+    padding: 0 7.5% 1% 5.5%;
+}
+
+.conteudo__abas-fundo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.conteudo__abas-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-texto {
+    display: flex;
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    background-color: var(--cor-de-fundo);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--cor-da-fonte);
+    z-index: 1;
+    transition: ease .5s;
+}
+
+.aba-img {
+    height: 275px;
+    transition: ease .5s;
+}
+
+.conteudo__abas-img:hover a {
+    transform: scale(1.1);
+}
+
+.conteudo__abas-img:hover img {
+    filter: brightness(0.8);
+}
